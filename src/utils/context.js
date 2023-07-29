@@ -4,15 +4,24 @@ export const Context = createContext();
 
 const AppContext = ({children}) =>{
 
-    const [categories, setCategories] = useState();
-    const [products, setProducts] = useState();
+    const [categories, setCategories] = useState([]);
+    const [products, setProducts] = useState([]);
+
+    // const getproducts=(products)=>{
+    //     setProducts(products);
+    //     console.log(products);
+    // }
+
+    // const getcategory=(category)=>{
+    //     setCategories(category);
+    // }
 
     return(
         <Context.Provider value={{
             categories,
-            setCategories,
-            products,
             setProducts,
+            products,
+            setCategories,
         }}>
             {children}
         </Context.Provider>
