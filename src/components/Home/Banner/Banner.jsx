@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Banner.scss";
 import BannerImg from "../../../assets/banner-img.png";
+import abc from "../../../assets/main.webp";
 
 const Banner = () => {
     return (
@@ -18,7 +19,7 @@ const Banner = () => {
                     <div className="banner-cta v2">Shop Now</div>
                 </div>
             </div>
-            <img className="banner-img" src={BannerImg} alt="" />
+            <img className="banner-img" src={abc} alt="" />
            </div>
         </div>
     );

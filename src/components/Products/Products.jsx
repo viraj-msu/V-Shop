@@ -17,6 +17,7 @@ const Products = ({ products, innerPage, headingText }) => {
       <Product />
       <Product />
       <Product />
+      <Product />
      {/* { products.forEach(element => {
         for(let item in element){
           
